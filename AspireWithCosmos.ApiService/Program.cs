@@ -22,12 +22,13 @@ builder.AddAzureCosmosClient(
         clientOptions.ApplicationName = "cosmos-aspire";
         clientOptions.SerializerOptions = new()
         {
-            PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+            PropertyNamingPolicy = CosmosPropertyNamingPolicy.Default
         };
         clientOptions.CosmosClientTelemetryOptions = new()
         {
             DisableDistributedTracing = false
         };
+        clientOptions.ConnectionMode = ConnectionMode.Gateway;
     });
 
 
@@ -54,7 +55,11 @@ app.MapPost("/iots", async (IoTDevice iot, CosmosClient cosmosClient) =>
 // Get all the iot devices
 app.MapGet("/iots", (CosmosClient cosmosClient) =>
     cosmosClient.GetAppDataContainer()
-                .GetItemLinqQueryable<IoTDevice>()
+                .GetItemLinqQueryable<IoTDevice>(
+                    requestOptions: new()
+                    {
+                        MaxItemCount = 10
+                    })
                 .ToFeedIterator()
                 .ToAsyncEnumerable()
 );
