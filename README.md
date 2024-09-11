@@ -55,5 +55,3 @@ To download and run the sample, follow these steps:
 
 5. Add a few todo items to try it out. 
 
-   ![The app running in the browser](images/image-20240613155651283.png)
-
