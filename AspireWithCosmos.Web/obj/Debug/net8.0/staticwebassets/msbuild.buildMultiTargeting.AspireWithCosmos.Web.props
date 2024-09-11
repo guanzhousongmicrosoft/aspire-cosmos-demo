@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AspireWithCosmos.Web.props" />
+</Project>

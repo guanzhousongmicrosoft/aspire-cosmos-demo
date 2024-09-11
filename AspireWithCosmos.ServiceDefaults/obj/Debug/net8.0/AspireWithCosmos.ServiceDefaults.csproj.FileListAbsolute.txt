@@ -1,0 +1,13 @@
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\bin\Debug\net8.0\AspireWithCosmos.ServiceDefaults.deps.json
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\bin\Debug\net8.0\AspireWithCosmos.ServiceDefaults.dll
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\bin\Debug\net8.0\AspireWithCosmos.ServiceDefaults.pdb
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.AssemblyInfo.cs
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.sourcelink.json
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.dll
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\refint\AspireWithCosmos.ServiceDefaults.dll
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\AspireWithCosmos.ServiceDefaults.pdb
+C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.ServiceDefaults\obj\Debug\net8.0\ref\AspireWithCosmos.ServiceDefaults.dll

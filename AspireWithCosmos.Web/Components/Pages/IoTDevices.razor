@@ -1,0 +1,122 @@
+﻿@page "/"
+
+@inject IoTApiClient IoTApi
+@inject IJSRuntime JS
+
+<PageTitle>IoT Devices</PageTitle>
+
+<h1>IoT Devices</h1>
+
+<p>Below is your list of IoT devices.</p>
+
+@if (iots == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <input @bind="_newIoTDescription" style="width: 100%" @ref="inputElement" />
+                </td>
+                <td width="120">
+                    <button class="btn btn-sm btn-primary" style="width: 100%" @onclick="async () => await OnNewIoTItemButtonClicked()">Connect</button>
+                </td>
+            </tr>
+            @foreach (var iot in iots.Where(_ => _.IsOnline == false))
+            {
+                <tr>
+                    <td width="120">
+                        <button class="btn btn-sm btn-success" style="width: 100%" @onclick="async () => await OnCompleteButtonClicked(iot.id)">Online</button>
+                    </td>
+                    <td colspan="2">@iot.Description</td>
+                    <td width="120">
+                        <button class="btn btn-sm btn-danger" style="width: 100%" @onclick="async () => await OnDeleteButtonClicked(iot.id)">Delete</button>
+                    </td>
+                </tr>
+            }
+            @foreach (var iot in iots.Where(_ => _.IsOnline == true))
+            {
+                <tr>
+                    <td width="120">
+                        <button class="btn btn-sm btn-warning" style="width: 100%" @onclick="async () => await OnNotCompleteButtonClicked(iot.id)">Offline</button>
+                    </td>
+                    <td colspan="2">@iot.Description</td>
+                    <td width="120">
+                        <button class="btn btn-sm btn-danger" style="width: 100%" @onclick="async () => await OnDeleteButtonClicked(iot.id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<IoTDevice> iots = new();
+    private bool _shouldRender = false;
+    private string _newIoTDescription = string.Empty;
+    private string _sampleUserName = "sampleuser";
+    private bool _setFocus = true;
+    private ElementReference inputElement;
+
+    protected override bool ShouldRender() => _shouldRender;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender || _setFocus)
+        {
+            await JS.InvokeVoidAsync("setFocus", inputElement);
+            _setFocus = false;
+        }
+    }
+
+    private async Task RefreshIoTs()
+    {
+        iots = await IoTApi.Retrieve();
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshIoTs();
+        _shouldRender = true;
+    }
+
+    protected async Task OnCompleteButtonClicked(string iotId)
+    {
+        var completed = iots.First(_ => _.id == iotId);
+        completed.IsOnline = true;
+        completed = await IoTApi.Update(iotId, completed);
+        await RefreshIoTs();
+    }
+
+    protected async Task OnNotCompleteButtonClicked(string iotId)
+    {
+        var completed = iots.First(_ => _.id == iotId);
+        completed.IsOnline = false;
+        completed = await IoTApi.Update(iotId, completed);
+        await RefreshIoTs();
+    }
+
+    protected async Task OnDeleteButtonClicked(string iotId)
+    {
+        var completed = iots.First(_ => _.id == iotId);
+        await IoTApi.Delete(_sampleUserName, iotId);
+        await RefreshIoTs();
+    }
+
+    protected async Task OnNewIoTItemButtonClicked()
+    {
+        await IoTApi.Create(new IoTDevice(_newIoTDescription, _sampleUserName)
+            {
+                id = Guid.NewGuid().ToString(),
+                IsOnline = false,
+            });
+
+        _newIoTDescription = string.Empty;
+        _setFocus = true;
+        await RefreshIoTs();
+    }
+}
