@@ -10,39 +10,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AspireWithCosmos.Web
 build_property.RootNamespace = AspireWithCosmos.Web
-build_property.ProjectDir = C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.Web\
+build_property.ProjectDir = /home/song/aspire-cosmos-demo/AspireWithCosmos.Web/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ntripician\Documents\GitHub\aspire-samples\samples\AspireWithCosmosDb\AspireWithCosmos.Web
+build_property.MSBuildProjectDirectory = /home/song/aspire-cosmos-demo/AspireWithCosmos.Web
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/Pages/IoTDevices.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJb1REZXZpY2VzLnJhem9y
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/Pages/IoTDevices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Jb1REZXZpY2VzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-8fsqrsymqg
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-f4fruaxjti
 
-[C:/Users/ntripician/Documents/GitHub/aspire-samples/samples/AspireWithCosmosDb/AspireWithCosmos.Web/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-h6aldp433k
+[/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mfr16rwfg2

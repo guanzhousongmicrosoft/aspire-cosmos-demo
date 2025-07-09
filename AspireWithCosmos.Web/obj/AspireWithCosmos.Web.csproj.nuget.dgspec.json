@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.Web\\AspireWithCosmos.Web.csproj": {}
+    "/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/AspireWithCosmos.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.ServiceDefaults\\AspireWithCosmos.ServiceDefaults.csproj": {
+    "/home/song/aspire-cosmos-demo/AspireWithCosmos.ServiceDefaults/AspireWithCosmos.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.ServiceDefaults\\AspireWithCosmos.ServiceDefaults.csproj",
+        "projectUniqueName": "/home/song/aspire-cosmos-demo/AspireWithCosmos.ServiceDefaults/AspireWithCosmos.ServiceDefaults.csproj",
         "projectName": "AspireWithCosmos.ServiceDefaults",
-        "projectPath": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.ServiceDefaults\\AspireWithCosmos.ServiceDefaults.csproj",
-        "packagesPath": "C:\\Users\\ntripician\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.ServiceDefaults\\obj\\",
+        "projectPath": "/home/song/aspire-cosmos-demo/AspireWithCosmos.ServiceDefaults/AspireWithCosmos.ServiceDefaults.csproj",
+        "packagesPath": "/home/song/.nuget/packages/",
+        "outputPath": "/home/song/aspire-cosmos-demo/AspireWithCosmos.ServiceDefaults/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\NuGet.Config",
-          "C:\\Users\\ntripician\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/song/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -39,19 +37,20 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[8.9.0, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Extensions.ServiceDiscovery": {
               "target": "Package",
-              "version": "[8.2.0, )"
+              "version": "[9.3.1, )"
             },
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
               "target": "Package",
@@ -93,36 +92,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.Web\\AspireWithCosmos.Web.csproj": {
+    "/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/AspireWithCosmos.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.Web\\AspireWithCosmos.Web.csproj",
+        "projectUniqueName": "/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/AspireWithCosmos.Web.csproj",
         "projectName": "AspireWithCosmos.Web",
-        "projectPath": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.Web\\AspireWithCosmos.Web.csproj",
-        "packagesPath": "C:\\Users\\ntripician\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.Web\\obj\\",
+        "projectPath": "/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/AspireWithCosmos.Web.csproj",
+        "packagesPath": "/home/song/.nuget/packages/",
+        "outputPath": "/home/song/aspire-cosmos-demo/AspireWithCosmos.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\NuGet.Config",
-          "C:\\Users\\ntripician\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/song/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.ServiceDefaults\\AspireWithCosmos.ServiceDefaults.csproj": {
-                "projectPath": "C:\\Users\\ntripician\\Documents\\GitHub\\aspire-samples\\samples\\AspireWithCosmosDb\\AspireWithCosmos.ServiceDefaults\\AspireWithCosmos.ServiceDefaults.csproj"
+              "/home/song/aspire-cosmos-demo/AspireWithCosmos.ServiceDefaults/AspireWithCosmos.ServiceDefaults.csproj": {
+                "projectPath": "/home/song/aspire-cosmos-demo/AspireWithCosmos.ServiceDefaults/AspireWithCosmos.ServiceDefaults.csproj"
               }
             }
           }
@@ -136,15 +133,16 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Refit": {
               "target": "Package",
-              "version": "[7.1.2, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -166,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,9 +2,11 @@
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var iotdb = builder.AddAzureCosmosDB("cosmos").AddDatabase("iotdb")
+var cosmos = builder.AddAzureCosmosDB("cosmos")
     // Remove the RunAsEmulator() line should you want to use a live instance during development
-    .RunAsEmulator(); 
+    .RunAsEmulator();
+
+var iotdb = cosmos.AddCosmosDatabase("iotdb"); 
 
 var apiService = builder.AddProject<Projects.AspireWithCosmos_ApiService>("apiservice")
     .WithReference(iotdb);
